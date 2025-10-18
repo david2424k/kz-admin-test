@@ -1,231 +1,32 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>KZ Project Group — Премиальное проектирование</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body class="site">
-
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <div class="brand">
-        <div class="logo">KZ</div>
-        <div>
-          <div class="brand-title">KZ Project Group</div>
-          <div class="brand-sub">Проектная компания</div>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">BrandName</div>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Pricing</a>
+                <a href="#">Contact</a>
+                <button class="admin-btn" onclick="location.href='admin.html'">Админа</button>
+            </nav>
         </div>
-      </div>
+    </header>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Главная</a>
-        <a href="#services">Услуги</a>
-        <a href="#about">О нас</a>
-        <a href="#contact">Контакты</a>
-      </div>
-
-      <button class="nav-toggle" id="navToggle" aria-label="toggle menu">☰</button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <span class="pill">Лицензированная проектная компания</span>
-        <h1 class="hero-title">
-          Премиальное
-          <span class="accent">проектирование</span>
-        </h1>
-        <p class="hero-sub">Инновационные архитектурные и инженерные решения для вашего бизнеса</p>
-
-        <div class="hero-actions">
-          <button id="openChat" class="btn-primary">AI-Консультация</button>
-          <a href="#contact" class="btn-ghost">Связаться с нами</a>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Engage Business</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet eros vitae urna vulputate varius.</p>
         </div>
-      </div>
+    </section>
 
-      <div class="hero-right">
-        <div class="hero-image">
-          <!-- замените src на своё изображение при необходимости -->
-          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1400&auto=format&fit=crop&crop=entropy" alt="Premium Architecture">
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- TRUST BADGES -->
-  <section class="badges">
-    <div class="container badges-grid">
-      <div class="badge"><div class="big">2</div><div>Государственные лицензии</div></div>
-      <div class="badge"><div class="big">500+</div><div>Реализованных проектов</div></div>
-      <div class="badge"><div class="big">24/7</div><div>AI-поддержка клиентов</div></div>
-      <div class="badge"><div class="big">100%</div><div>Соответствие стандартам</div></div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section id="services" class="section services">
-    <div class="container">
-      <div class="section-head">
-        <h2>Наши услуги</h2>
-        <p>Комплексный подход к проектированию с использованием передовых технологий</p>
-      </div>
-
-      <div class="cards">
-        <article class="card">
-          <div class="icon">🏢</div>
-          <h3>Архитектурное проектирование</h3>
-          <p>Разработка концепций и рабочей документации для объектов любой сложности</p>
-        </article>
-
-        <article class="card">
-          <div class="icon">💡</div>
-          <h3>Инженерные системы</h3>
-          <p>Проектирование инженерных коммуникаций и систем жизнеобеспечения</p>
-        </article>
-
-        <article class="card">
-          <div class="icon">🛡️</div>
-          <h3>BIM-моделирование</h3>
-          <p>Информационное моделирование зданий для эффективного управления проектами</p>
-        </article>
-
-        <article class="card">
-          <div class="icon">🏆</div>
-          <h3>Проектный консалтинг</h3>
-          <p>Экспертное сопровождение проектов на всех этапах реализации</p>
-        </article>
-
-        <article class="card">
-          <div class="icon">📄</div>
-          <h3>Экспертиза проектов</h3>
-          <p>Независимая экспертиза проектной документации и технический аудит</p>
-        </article>
-
-        <article class="card">
-          <div class="icon">💬</div>
-          <h3>AI-консультации</h3>
-          <p>Мгновенные ответы на вопросы через интеллектуального помощника</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section about">
-    <div class="container about-grid">
-      <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop&crop=entropy" alt="Office">
-        <div class="director-card">
-          <div class="name">М.В. Петров</div>
-          <div class="role">Директор компании</div>
-        </div>
-      </div>
-
-      <div>
-        <h2>О компании</h2>
-        <p>ТОО «Kz Project Group» — лицензированная проектная компания, специализирующаяся на архитектурном и инженерном проектировании объектов различного назначения.</p>
-        <p>Мы используем передовые технологии BIM-моделирования и AI-системы для создания инновационных проектных решений, соответствующих международным стандартам качества.</p>
-
-        <ul class="about-list">
-          <li>ГСЛ-КР №002187 от 08.02.2023 и ГСЛ№ 23017135 от 31.07.2023</li>
-          <li>Высококвалифицированные специалисты с международными сертификатами</li>
-          <li>Инновационные технологии: BIM, AI и современные методы проектирования</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <div class="container contact-grid">
-      <div class="contact-card">
-        <h3>Контактная информация</h3>
-        <p class="muted">Телефон / WhatsApp</p>
-        <a href="tel:+77088880098" class="contact-link">+7-708-888-00-98</a>
-
-        <p class="muted">Email</p>
-        <a href="mailto:kzprojectgroup@mail.ru" class="contact-link">kzprojectgroup@mail.ru</a>
-
-        <p class="muted">Адрес</p>
-        <address class="muted small">
-          Казахстан, Алматинская область,<br>
-          Талгарский район, г. Талгар,<br>
-          ул. Қазанғап, дом 4А, кв.17, 041600
-        </address>
-      </div>
-
-      <div class="contact-card">
-        <h3>Реквизиты компании</h3>
-        <div class="muted small">Полное наименование</div>
-        <div class="bold mb">ТОО «Kz Project Group»</div>
-
-        <div class="muted small">БИН</div>
-        <div class="mono">021240006983</div>
-
-        <div class="muted small">ИИК</div>
-        <div class="mono">KZ33601A861012861021</div>
-
-        <div class="muted small">БИК Банка</div>
-        <div class="mono">HSBKKZKX</div>
-
-        <div class="muted small">Банк</div>
-        <div>АО «Народный Банк Казахстан»</div>
-      </div>
-    </div>
-
-    <div class="container align-center">
-      <button id="openChat2" class="btn-primary icon-btn">📩 Получить консультацию AI</button>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>© 2025 ТОО «KZ Project Group». Все права защищены.</div>
-      <div class="muted small">БИН: 021240006983 | Директор: Петров М.В.</div>
-    </div>
-  </footer>
-
-  <!-- CHAT BUTTON (floating) -->
-  <button id="chatFab" class="chat-fab" title="Открыть чат">💬</button>
-
-  <!-- CHAT WINDOW -->
-  <div id="chatWindow" class="chat-window hidden" role="dialog" aria-label="AI Помощник">
-    <div class="chat-header">
-      <div class="chat-title">
-        <div class="avatar">🤖</div>
-        <div>
-          <div class="bold">AI-Помощник</div>
-          <div class="muted small">KZ Project Group</div>
-        </div>
-      </div>
-      <button id="closeChat" class="chat-close" aria-label="Закрыть">✕</button>
-    </div>
-
-    <div class="chat-body" id="chatBody" aria-live="polite">
-      <!-- messages appended here -->
-    </div>
-
-    <div class="chat-quick" id="quickActions">
-      <div class="small muted">Популярные вопросы:</div>
-      <div class="quick-list">
-        <button class="quick-btn" data-action="услуги">Наши услуги</button>
-        <button class="quick-btn" data-action="контакты">Контакты</button>
-        <button class="quick-btn" data-action="лицензии">Лицензии</button>
-        <button class="quick-btn" data-action="реквизиты">Реквизиты</button>
-      </div>
-    </div>
-
-    <div class="chat-input">
-      <input id="chatInput" type="text" placeholder="Введите сообщение..." />
-      <button id="sendBtn" class="send-btn" aria-label="Отправить">➤</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
