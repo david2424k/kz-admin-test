@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KZ Project Group — Панель администратора</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site">
+  <header class="header">
+    <h1>KZ Project Group — Панель администратора</h1>
+  </header>
+
+  <main class="container">
+    <div id="loginPanel" class="form">
+      <h2>Авторизация</h2>
+      <input type="password" id="adminPassword" placeholder="Введите пароль">
+      <button id="loginBtn" class="btn-primary">Войти</button>
+    </div>
+
+    <div id="adminPanel" class="hidden">
+      <h2>Список заявок</h2>
+      <table id="dataTable">
+        <thead>
+          <tr><th>Имя</th><th>Телефон</th><th>Сообщение</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <button id="clearBtn" class="btn-clear">Очистить все заявки</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 ТОО «KZ Project Group». Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
