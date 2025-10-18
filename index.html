@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KZ Project Group — Оставить заявку</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site">
+  <header class="header">
+    <h1>KZ Project Group</h1>
+    <p>Премиальное проектирование</p>
+  </header>
+
+  <main class="container">
+    <h2>Оставить заявку</h2>
+    <form id="contactForm" class="form">
+      <label>Имя:</label>
+      <input type="text" id="name" required>
+
+      <label>Телефон:</label>
+      <input type="tel" id="phone" required>
+
+      <label>Сообщение:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit" class="btn-primary">Отправить</button>
+    </form>
+
+    <p class="note">После отправки данные будут сохранены локально и доступны в панели администратора.</p>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 ТОО «KZ Project Group». Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
