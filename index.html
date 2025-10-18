@@ -1,38 +1,37 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KZ Project Group — Оставить заявку</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KZ Project Group</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-<body class="site">
-  <header class="header">
-    <h1>KZ Project Group</h1>
-    <p>Премиальное проектирование</p>
-  </header>
+<body class="bg-gradient-to-br from-yellow-100 via-amber-200 to-yellow-300 min-h-screen flex flex-col items-center justify-center">
+  <div class="bg-white shadow-2xl rounded-2xl p-10 max-w-md w-full">
+    <h1 class="text-3xl font-bold text-center text-yellow-800 mb-6">KZ Project Group</h1>
+    <p class="text-center text-gray-600 mb-8">Оставьте заявку — мы свяжемся с вами</p>
 
-  <main class="container">
-    <h2>Оставить заявку</h2>
-    <form id="contactForm" class="form">
-      <label>Имя:</label>
-      <input type="text" id="name" required>
+    <form id="contactForm" class="space-y-4">
+      <div>
+        <label class="block font-semibold mb-1">Имя</label>
+        <input id="name" type="text" required class="w-full border border-yellow-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-yellow-500 outline-none">
+      </div>
 
-      <label>Телефон:</label>
-      <input type="tel" id="phone" required>
+      <div>
+        <label class="block font-semibold mb-1">Email</label>
+        <input id="email" type="email" required class="w-full border border-yellow-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-yellow-500 outline-none">
+      </div>
 
-      <label>Сообщение:</label>
-      <textarea id="message" rows="4" required></textarea>
+      <div>
+        <label class="block font-semibold mb-1">Сообщение</label>
+        <textarea id="message" rows="4" required class="w-full border border-yellow-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-yellow-500 outline-none"></textarea>
+      </div>
 
-      <button type="submit" class="btn-primary">Отправить</button>
+      <button type="submit" class="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 rounded-lg shadow-md transition">Отправить</button>
     </form>
 
-    <p class="note">После отправки данные будут сохранены локально и доступны в панели администратора.</p>
-  </main>
-
-  <footer class="footer">
-    <p>© 2025 ТОО «KZ Project Group». Все права защищены.</p>
-  </footer>
+    <p class="text-center text-gray-500 text-sm mt-6">© 2025 ТОО «KZ Project Group»</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
