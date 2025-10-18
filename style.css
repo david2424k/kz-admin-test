@@ -1,0 +1,49 @@
+body,html {
+  margin:0;
+  padding:0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background:#f8fafc;
+  color:#111827;
+}
+.header {
+  text-align:center;
+  background:linear-gradient(135deg,#f59e0b,#b45309);
+  color:white;
+  padding:30px 10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.container {
+  max-width:600px;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:16px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+h2 {text-align:center;color:#92400e;}
+label {display:block;margin-top:15px;font-weight:600;}
+input,textarea {
+  width:100%;padding:10px;margin-top:6px;
+  border:1px solid #ddd;border-radius:8px;
+}
+.btn-primary {
+  margin-top:20px;width:100%;
+  background:linear-gradient(135deg,#b45309,#92400e);
+  border:none;color:white;font-weight:bold;
+  padding:12px;border-radius:10px;cursor:pointer;
+}
+.btn-primary:hover {opacity:0.9;}
+.footer {text-align:center;padding:20px;font-size:14px;color:#666;}
+.note {text-align:center;color:#666;margin-top:20px;font-size:14px;}
+.hidden {display:none;}
+#dataTable {
+  width:100%;border-collapse:collapse;margin-top:20px;
+}
+#dataTable th,#dataTable td {
+  border:1px solid #ddd;padding:10px;text-align:left;
+}
+#clearBtn {
+  margin-top:20px;background:#b91c1c;color:white;
+  border:none;padding:10px 20px;border-radius:8px;cursor:pointer;
+}
+#clearBtn:hover {background:#991b1b;}
